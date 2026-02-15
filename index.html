@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Balance | By Noemie Mankeu</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Academic Balance</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#causes">Causes</a>
+        <a href="#effects">Effects</a>
+        <a href="#strategies">Strategies</a>
+        <a href="#quiz">Stress Test</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Managing Academic Pressure Together</h1>
+        <p>Supporting secondary students, university learners, and young adults.</p>
+        <button onclick="scrollToSection('quiz')">Check Your Stress Level</button>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="content">
+        <img src="images/students.jpg" alt="Students studying">
+        <div>
+            <h2>About Academic Pressure</h2>
+            <p>Academic pressure is stress related to exams, deadlines, and expectations. When unmanaged, it can affect both mental health and academic performance.</p>
+        </div>
+    </div>
+</section>
+
+<section id="causes" class="section dark">
+    <h2>Main Causes</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/study.jpg" alt="">
+            <h3>High Expectations</h3>
+            <p>Pressure from parents, teachers, and society.</p>
+        </div>
+        <div class="card">
+            <img src="images/stress.jpg" alt="">
+            <h3>Exam Anxiety</h3>
+            <p>Fear of failing or underperforming.</p>
+        </div>
+        <div class="card">
+            <h3>Time Management</h3>
+            <p>Balancing academics and personal life.</p>
+        </div>
+    </div>
+</section>
+
+<section id="effects" class="section">
+    <h2>Effects</h2>
+    <ul>
+        <li>Burnout</li>
+        <li>Lack of sleep</li>
+        <li>Low motivation</li>
+        <li>Anxiety</li>
+    </ul>
+</section>
+
+<section id="strategies" class="section dark">
+    <h2>Coping Strategies</h2>
+    <div class="grid">
+        <div>✔ Study schedules</div>
+        <div>✔ Breaks & relaxation</div>
+        <div>✔ Exercise</div>
+        <div>✔ Asking for help</div>
+    </div>
+</section>
+
+<section id="quiz" class="section">
+    <h2>Stress Self-Test</h2>
+    <label>How often do you feel overwhelmed?</label>
+    <select id="q1">
+        <option value="1">Rarely</option>
+        <option value="2">Sometimes</option>
+        <option value="3">Often</option>
+    </select>
+    <button onclick="calculateStress()">Calculate</button>
+    <p id="result"></p>
+</section>
+
+<section id="resources" class="section dark">
+    <h2>Helpful Resources</h2>
+    <p>Talk to your school counselor, trusted adult, or mental health professional if needed.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact & Support</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+    <p>Website Designed & Developed by <strong>Noemie Mankeu</strong></p>
+    <p>MYP Design Project 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
